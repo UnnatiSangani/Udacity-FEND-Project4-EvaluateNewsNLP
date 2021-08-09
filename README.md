@@ -16,16 +16,30 @@ This Project is a web tool that allows users to run Natural Language Processing 
 
 ## How to run the Project
 
- 1. Download/Clone this repository
+1. Download/Clone this repository
    cd into the new folder and Install all dependancies
-   write npm install on the terminal
- 2. To run the server in the production mode and create dist folder
-    npm run build-prod on the terminal
- 3. For using Aylien Api, Sign Up here to get your own API KEY & ID
-    Create a .env file that contain your API_ID and your API_KEY
- 4. To start the server by
-    Put npm start in the terminal
-    This project is running on: http://localhost:5000
+    
+2. To install dependency:
+   npm install
+   
+3. To build the project in production mode
+  npm run build-prod
+  
+4. To start the server
+  npm run start
+  
+5. To build the project in developement mode
+- npm run build-dev
+- This will automatically open localshost:5000
+
+6. To test the project
+   npm run test
+   
+7. To run the client, open 'localhost:5000', this will open index.html
+- Enter valid URL code and press 'Submit'
+- For a valid URL you would see a result
+- For a non valid url, no reuslts will be generated
+ 
         
  ## Offline Functionality
 
