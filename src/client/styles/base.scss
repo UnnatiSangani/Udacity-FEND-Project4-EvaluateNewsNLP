@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.result {
+    margin: 0.75rem auto;
+    line-height: 1.875rem;
+    color: tomato;
+}

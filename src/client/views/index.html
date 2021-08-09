@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Natural Language Processing</title>
+</head>
+
+<body>
+    <header>
+        <h1>News Article Evaluation with NLP</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enter text or paragraph in the form below for analysis:</h2>
+            <section>
+                <form  onsubmit=" return Client.handleSubmit(event)">
+                    <!-- <label for="name">Enter Url</label> -->
+                    <input id="name" type="text" name="input" value="" placeholder="Enter Url" required>
+                    <input id="btn-submit" type="submit" value="Submit" >
+                </form>
+            </section>
+        </div>
+        <div class="result">
+            <h3 id="res-title">NLP Results</h3>
+            <div id="results">
+                <div id="error"> </div>
+                <div id="polarity"> </div>
+                <div id="subjectivity"> </div>
+                <div id="polarity-confidence"> </div>
+                <div id="subject-confidence"></div>
+                <div id="text"></div>
+            </div>
+        </div>
+        <div id="error-out"></div>
+        </section>        
+    </main>
+
+    <footer>
+        <p>&copy; Developed by Unnati Sangani</p>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>

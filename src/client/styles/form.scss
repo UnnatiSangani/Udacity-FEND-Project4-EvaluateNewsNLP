@@ -1,0 +1,26 @@
+form {
+    border: 1px solid #545454;
+    border-radius: 3px;
+    padding: 40px;
+    margin: 0.825rem auto;
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+}
+
+#btn {
+    padding: 10px;
+    background-color: mediumseagreen;
+    color: #eee;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(50, 156, 98);
+    }
+}
